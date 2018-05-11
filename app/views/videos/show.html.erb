@@ -1,0 +1,4 @@
+<h1><%= @video.name %></h1>
+<%= video_tag @video.video.url(:mp4), controls: true %>
+<p>Views: <strong><%= @video.views %></strong></p>
+<p><%= @video.description %></p>

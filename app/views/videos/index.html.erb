@@ -1,0 +1,7 @@
+<h1>Videos</h1>
+<% if logged_in? %>
+  <%= link_to 'Upload Video', new_video_path, class: 'btn btn-success' %>
+<% end %>
+<div class="row">
+  <%= render @videos %>
+</div>
